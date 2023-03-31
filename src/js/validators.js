@@ -5,10 +5,12 @@ export default function validateCardType(cardNumber) {
     cards = Array.from(cards);
 
 
-    let firstSymbols = Number(cardNumber[0] + cardNumber[1]);
-    let firstThreeSymbols = Number(cardNumber.slice(0, 3));
-    let firstFourSymbols = Number(cardNumber.slice(0, 4));
-    let firstSixSymbols = Number(cardNumber.slice(0, 6));
+    let firstS = Number(cardNumber[0] + cardNumber[1]);
+    let firstThreeS = Number(cardNumber.slice(0, 3));
+    let firstFourS = Number(cardNumber.slice(0, 4));
+    let firstSixS = Number(cardNumber.slice(0, 6));
+    let length = Number(cardNumber.length);
+    // console.log(typeof length);
 
     // console.log(firstSixSymbols);
     // console.log(firstFourSymbols);
@@ -16,7 +18,7 @@ export default function validateCardType(cardNumber) {
     // console.log(cardNumber.length);
 
 
-    if (cardNumber[0] === "2" && (cardNumber.length < 20 && cardNumber.length > 15)) {
+    if (cardNumber[0] === "2" && (length < 20 && length > 15)) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("MIR") !== true) {
@@ -31,7 +33,7 @@ export default function validateCardType(cardNumber) {
         return true
     }
 
-    if (cardNumber[0] === "4" && (cardNumber.length === 13 || cardNumber.length === 16 || cardNumber.length === 19)) {
+    if (cardNumber[0] === "4" && (length === 13 || length === 16 || length === 19)) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("Visa") !== true) {
@@ -44,7 +46,7 @@ export default function validateCardType(cardNumber) {
         // console.log("Visa");
         return true
     }
-    if ((firstSymbols === 36 || firstSymbols === 54 || (firstThreeSymbols > 299 & firstThreeSymbols < 306)) && (cardNumber.length === 14 || cardNumber.length === 16)) {
+    if ((firstS === 36 || firstS === 54 || (firstThreeS > 299 && firstThreeS < 306)) && (length === 14 || length === 16)) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("DinersClub") !== true) {
@@ -59,7 +61,7 @@ export default function validateCardType(cardNumber) {
 
         return true
     }
-    if ((firstSymbols === 34 || firstSymbols === 37) && cardNumber.length === 15) {
+    if ((firstS === 34 || firstS === 37) && length === 15) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("AmericanExpress") !== true) {
@@ -73,7 +75,7 @@ export default function validateCardType(cardNumber) {
         // console.log("American Express");
         return true
     }
-    if ((firstSymbols === 65 || (firstThreeSymbols > 643 && firstThreeSymbols < 650) || firstFourSymbols === 6011 || (firstSixSymbols > 622125 && firstSixSymbols < 622926)) && cardNumber.length === 16) {
+    if ((firstS === 65 || (firstThreeS > 643 && firstThreeS< 650) || firstFourS === 6011 || (firstSixS > 622125 && firstSixS < 622926)) && length === 16) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("Discover") !== true) {
@@ -89,7 +91,7 @@ export default function validateCardType(cardNumber) {
         // console.log("Discover");
         return true
     }
-    if ((firstFourSymbols > 3527 && firstFourSymbols < 3590) && (cardNumber.length > 15 && cardNumber.length < 20)) {
+    if ((firstFourS > 3527 && firstFourS < 3590) && (length > 15 && length < 20)) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("JCB") !== true) {
@@ -102,7 +104,7 @@ export default function validateCardType(cardNumber) {
         // console.log("JCB");
         return true
     }
-    if (((firstSymbols > 50 && firstSymbols < 59) || (firstSixSymbols > 222099 && firstSixSymbols < 272100)) && cardNumber.length === 16) {
+    if (((firstS > 50 && firstS < 59) || (firstSixS > 222099 && firstS < 272100)) && length === 16) {
 
         cards.forEach(function (card) {
             if (card.classList.contains("MasterCard") !== true) {

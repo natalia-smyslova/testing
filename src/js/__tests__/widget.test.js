@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { CardWidget } from "../widget";
+import CardWidget from "../widget";
 
 //Отрисовка контейнера в DOM
 
