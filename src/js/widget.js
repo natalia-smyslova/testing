@@ -2,7 +2,7 @@ import Moon from './Moon';
 
 import validateCardType from './validators';
 
-export class CardWidget {
+export default class CardWidget {
     constructor(parentEl) {
         this.parentEl = parentEl;
 
@@ -36,27 +36,19 @@ export class CardWidget {
         this.parentEl.innerHTML = CardWidget.markup;
 
         this.element = this.parentEl.querySelector(CardWidget.selector);
-        // console.log(this.element);
 
         this.submit = this.parentEl.querySelector(CardWidget.submitSelector);
-        // console.log(this.submit);
 
         this.input = this.parentEl.querySelector(CardWidget.inputSelector);
-        // this.input.value = '4539247490400651';
-        // console.log(this.input.value);
 
         this.element.addEventListener('submit', this.onSubmit);
-
-        console.log(this.onSubmit);
 
     }
 
     onSubmit(e) {
         e.preventDefault();
-        console.log('submit');
 
         const moonValue = Moon(this.input.value);
-        console.log(moonValue);
 
         if (moonValue === true) {
             validateCardType(this.input.value);

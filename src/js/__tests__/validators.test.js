@@ -10,18 +10,18 @@ import validateCardType from "../validators";
 
 test('it should return true for valid Moon algorithm', () => {
 
-    const card_number = "3544586219675001";
+    const cardNumber = "3544586219675001";
 
-    expect(Moon(card_number)).toBe(true);
+    expect(Moon(cardNumber)).toBe(true);
 });
 
 // Тест на алгоритм Луна (неправильный номер карты)
 
 test('it should return false for invalid Moon algorithm', () => {
 
-    const card_number = "3544";
+    const cardNumber = "3544";
 
-    expect(Moon(card_number)).toBe(false);
+    expect(Moon(cardNumber)).toBe(false);
 });
 
 
