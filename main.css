@@ -1,0 +1,131 @@
+body {
+    color: #333;
+}
+
+.content {
+    max-width: 400px;
+}
+
+.cards-form-widget {
+    display: flex;
+}
+
+#cards-input {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-right: 0.5rem;
+}
+
+button {
+    text-align: center;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    background-color: #5eb462;
+    color: #fff;
+}
+
+.cards {
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 70%;
+}
+
+.inactive {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.Visa {
+    position: relative;
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(545145c60c726b397f61.png);
+}
+
+.MasterCard {
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(5ca1f088ecdd58e47981.png);
+}
+
+
+.AmericanExpress {
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(23a3dfa76c9c691ff89c.png);
+}
+
+.Discover {
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(dde5b0a44a37a5ef0adb.png);
+}
+
+.DinersClub {
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(d5becb1f1affb962e0cb.png);
+}
+
+.JCB {
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(66a8363786885af5a7a0.png);
+}
+
+.MIR {
+    height: 1.25rem;
+    width: 14%;
+    color: rgb(158, 225, 177);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(98c2789411448c6feb41.png);
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  border: 1px solid red;
+}
+
+img {
+  width: 100px;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
