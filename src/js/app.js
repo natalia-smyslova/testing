@@ -1,6 +1,6 @@
 // TODO: write code here
 
-import CardWidget from "./widget";
+import CardWidget from './widget';
 
 const container = document.querySelector('.container');
 
