@@ -2,6 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/h3nuwlbdgvem4smq/branch/main?svg=true)](https://ci.appveyor.com/project/natalia-smyslova/testing/branch/main)
 
+[ДЕМО](https://natalia-smyslova.github.io/testing/)
 
 # Домашнее задание к занятию "4.Организация тестирования"
 
